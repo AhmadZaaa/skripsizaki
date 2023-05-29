@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+.question-card,
+.final-result {
+  background-color: cyan;
+  padding: 16px;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px -12px, rgba(0, 0, 0, 0.3) 0px,
+    18px, 36px, -18px;
+  margin-bottom: 16px;
+}
+
+.question-text {
+  color: navy;
+  font-size: 30px;
+}
+
+.frac {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 0.001em;
+  text-align: center;
+}
+.frac > span {
+  display: block;
+  padding: 0.1em;
+}
+.frac span.bottom {
+  border-top: thin solid black;
+  width: 190px;
+}
+.frac span.symbol {
+  display: none;
+}
+
+.tr-garis,
+.td-garis {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+.tabel-tengah {
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+/* Styles for active tab */
+.nav-tabs .nav-link.active {
+  background-color: red;
+  color: blue;
+}
+
+.nav-item {
+  background-color: white;
+  border: none;
+  padding-bottom: 1px;
+}
+
+/* Styles for inactive tabs */
+.nav-tabs .nav-link {
+  background-color: yellow;
+  color: green;
+}
+
+/* Dice CSS */
+
+/* RollDice.css File */
+
+.RollDice {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 50vh;
+}
+
+/* Shows each dice in one row */
+.RollDice-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Styling rolldice button */
+.RollDice button {
+  width: 15em;
+  padding: 1.5em;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  margin-top: 3em;
+  align-self: center;
+}
+
+/* Setting hover effect on button */
+.RollDice button:hover {
+  cursor: pointer;
+}
+
+.RollDice-rolling {
+  border: 0px;
+  border-radius: 10px;
+  background-color: red !important;
+  opacity: 0.7;
+}
+
+/* Die.css File */
+
+/* Styling each Die */
+.Die {
+  font-size: 10em;
+  padding: 0.25em;
+  color: red;
+}
+
+/* Applying Animation */
+.Die-shaking {
+  animation-name: wobble;
+  animation-duration: 1s;
+}
+
+.Die2 {
+  font-size: 10em;
+  padding: 0.25em;
+  color: grey;
+}
+
+/* Applying Animation */
+.Die2-shaking {
+  animation-name: wobble;
+  animation-duration: 1s;
+}
+
+/* Setting Animation effect to the dice using css keyframe */
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
